@@ -1,0 +1,57 @@
+/* Header Styles */
+.site-header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main-bar-wraper {
+  width: 100%;
+}
+
+.main-bar {
+  padding: 10px 0;
+}
+
+.main-bar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header a {
+  display: block;
+  line-height: 0;
+}
+
+.logo-header img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-header img {
+    height: 40px;
+  }
+  
+  .main-bar {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-header img {
+    height: 35px;
+  }
+}
+
