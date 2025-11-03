@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 function LandingPage() {
@@ -188,6 +189,9 @@ function LandingPage() {
                     <button type="submit" className="btn-submit" disabled={heroLoading}>
                       {heroLoading ? 'Submitting...' : 'View Plans'}
                     </button>
+                    <div style={{ marginTop: '12px', fontSize: '12px', color: '#666', textAlign: 'center' }}>
+                      By submitting, you agree to our <Link to="/terms-conditions" style={{ color: '#4a90e2', textDecoration: 'none' }}>Terms & Conditions</Link> and <Link to="/privacy-policy" style={{ color: '#4a90e2', textDecoration: 'none' }}>Privacy Policy</Link>
+                    </div>
                     {heroMessage && (
                       <div className={`form-message ${heroMessage.includes('✓') ? 'success' : 'error'}`}>
                         {heroMessage}
